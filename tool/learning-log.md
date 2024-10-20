@@ -1,13 +1,14 @@
 # Tool Learning Log
 
-## Tool: **X**
+## Tool: **Kaboom**
 
-## Project: **X**
-
----
-
-### X/X/XX:
-* Text
+### 10/20/24:
+* [Kaboom](https://kaboomjs.com/doc/setup)
+* With Kaboom it allows you to create video games such as Mario for example
+* In this [Kaboom tutorial](https://kaboomjs.com/doc/intro) it explains how the basic necessity of kaboom works
+* In that tutorial that they have I tinkered a bit with it and aslong as you follow their tutorial everything should work as intended
+* The first thing that I did was getting the spirtes to appear on screen and haveing them at a specific location
+  
 
 ### X/X/XX:
 * Text
