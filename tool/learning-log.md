@@ -26,6 +26,37 @@ onKeyDown("right", () => {
 * This code allows for the character to move diagonally down to the right when the right arrow key is pressed
 
 
+### 11/24/24
+* I was able to make a loader, so that when you run the site there is a loading screen
+```js
+onLoading((progress) => {
+
+	drawRect({
+	width: width(),
+	height: height(),
+	color: rgb(0, 0, 0),
+	})
+```
+* This allows for a loading screen to be added
+* I also made text and shape on the loading screen by using:
+```js
+	drawCircle({
+	pos: center(),
+	radius: 38,
+	end: map(progress, 0, 1, 0, 360),
+	})
+
+	drawText({
+	text: "now loading" + ".".repeat(wave(1, 4, time() * 12)),
+	font: "monospace",
+	size: 26,
+	anchor: "center",
+	pos: center().add(0, 70),
+	})
+```
+* This code allows for a shape to be shown at a specfic spot on your screen and how big it is shown
+
+
 
 <!--
 * Links you used today (websites, videos, etc)
