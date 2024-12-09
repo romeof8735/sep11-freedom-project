@@ -56,6 +56,22 @@ onLoading((progress) => {
 ```
 * This code allows for a shape to be shown at a specfic spot on your screen and how big it is shown
 
+### 12/8/24
+* I was able to add text so that way the player could know what to press to move the character. The code I used was:
+```js
+const input = add([
+	text("Use WASD to move the character", {
+		font: fonts[curFont],
+		width: width() - pad * 2,
+		size: curSize,
+		align: "left",
+		lineSpacing: 8,
+		letterSpacing: 4,
+		}),
+	}),
+```
+* This allows me to add text for the player to read to help them out.
+* Now that I have learned the basics of these things the next thing that I will try and do is create a platformer, which is what my main project is all about.
 
 
 <!--
