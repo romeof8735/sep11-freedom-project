@@ -1,7 +1,8 @@
 # Entry 2
-##### X/X/XX
+##### 12/9/24
 
-Text
+### Learning Kaboom 
+
 
 [Previous](entry01.md) | [Next](entry03.md)
 
