@@ -73,6 +73,20 @@ const input = add([
 * This allows me to add text for the player to read to help them out.
 * Now that I have learned the basics of these things the next thing that I will try and do is create a platformer, which is what my main project is all about.
 
+### 12/15/24
+* With kaboom I was able to create a sprtite in the certain place where I want it to be at
+* The code I used was:
+```js
+loadSprite("ghosty", "/sprites/ghosty.png")
+
+const player = add([
+	sprite("ghosty"),
+	pos(120, 80),
+	anchor("center"), 
+])
+```
+* This code allows me to add the sprite where I want it and this is super important for me since I will be making a platformer game, and I am planning on adding mobs that if they attack you, you get sent back to the start.
+
 
 <!--
 * Links you used today (websites, videos, etc)
