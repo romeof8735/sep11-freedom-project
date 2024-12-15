@@ -1,7 +1,7 @@
 # Entry 2
 ##### 12/9/24
 
-### Learning Kaboom 
+### Learning Kaboom
 So far I have been tinkering with Kaboom in my ide for a little bit and so far I have learned many things. I have learned things like how to use a `loader`, `text`, `speed`, and `player movement`. While I was learning on make the `loader` in the Kaboom I used their tutorial to help me, and it was pretty similar to add to my game. The player movement and speed that I used in my game looks like this: ![image alt](https://github.com/romeof8735/sep11-freedom-project/blob/7c3abb305622389c2d5268aa98d25cb5ede3fb41/Screen%20recording%202024-12-14%209.43.56%20PM.gif)
 I was able to move the sprite with some speed by using this code:
 ```js
@@ -28,8 +28,8 @@ onKeyDown("s", () => {
 	player.move(0, SPEED)
 })
 ```
-This code allowed for my sprite to be able to move while being able to move at the speed that I assigned it to. For the loader in my game looks like this: ![image alt](https://github.com/romeof8735/sep11-freedom-project/blob/761405f34ed4f6d0073bdb71e5043ced7b9f3b35/Screen%20recording%202024-12-14%2010.00.59%20PM.gif)
-The code that I used the create this `loader` was: 
+This code allowed for my sprite to be able to move while being able to move at the speed that I assigned it to. For the `loader` in my game it looks like this: ![image alt](https://github.com/romeof8735/sep11-freedom-project/blob/761405f34ed4f6d0073bdb71e5043ced7b9f3b35/Screen%20recording%202024-12-14%2010.00.59%20PM.gif)
+The code that I used the create this `loader` was:
 ```js
 load(new Promise((res) => {
 	setTimeout(() => {
@@ -44,7 +44,7 @@ onLoading((progress) => {
 		height: height(),
 		color: rgb(0, 0, 0),
 	})
-	
+
 	drawCircle({
 		pos: center(),
 		radius: 38,
@@ -62,7 +62,7 @@ onLoading((progress) => {
 })
 ```
 This code allows for me to create a black screen, then load a sprite that will represent a loading percentage, and then add text that says "Now Loading". Last but not least I was able to add text so that the player could know what keys to press inorder for you to do things. The text looks like this: ![image alt}(https://github.com/romeof8735/sep11-freedom-project/blob/878ad968645fd567bad907cda864b8bd3de5127e/Screenshot%202024-12-14%2010.33.03%20PM.png)
-The code that I used for this text was: 
+The code that I used for this text was:
 ```js
 loadFont("FlowerSketches", "/examples/fonts/FlowerSketches.ttf")
 loadFont("apl386", "/examples/fonts/apl386.ttf", { outline: 4, filter: "linear" })
@@ -99,7 +99,7 @@ const input = add([
 	}),
 ])
 ```
-This code allows for me add the type of font that I want to use, where I want to position it, and what I want it to say. After I learn a few more things I will be planing on making a platformer, where I can use these elements that I have learned so far and use them insisde of the platformer game that I was hopefully be creating by the end of the year. 
+This code allows for me to add the type of font that I want to use, where I want to position it, and what I want it to say. After I learn a few more things I will be planing on making a platformer, where I can use these elements that I have learned so far and use them insisde of the platformer game that I was hopefully be creating by the end of the year.
 
 [Previous](entry01.md) | [Next](entry03.md)
 
