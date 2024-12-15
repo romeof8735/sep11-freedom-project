@@ -61,7 +61,8 @@ onLoading((progress) => {
 
 })
 ```
-This code allows for me to create a black screen, then load a sprite that will represent a loading percentage, and then add text that says "Now Loading". Last but not least I was able to add text so that the player could know what keys to press inorder for you to do things. The text looks like this: ![image alt}(https://github.com/romeof8735/sep11-freedom-project/blob/878ad968645fd567bad907cda864b8bd3de5127e/Screenshot%202024-12-14%2010.33.03%20PM.png)
+This code allows for me to create a black screen, then load a sprite that will represent a loading percentage, and then add text that says "Now Loading". Last but not least I was able to add text so that the player could know what keys to press inorder for you to do things. The text looks like this: ![image alt](https://github.com/romeof8735/sep11-freedom-project/blob/878ad968645fd567bad907cda864b8bd3de5127e/Screenshot%202024-12-14%2010.33.03%20PM.png)
+
 The code that I used for this text was:
 ```js
 loadFont("FlowerSketches", "/examples/fonts/FlowerSketches.ttf")
