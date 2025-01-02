@@ -87,6 +87,23 @@ const player = add([
 ```
 * This code allows me to add the sprite where I want it and this is super important for me since I will be making a platformer game, and I am planning on adding mobs that if they attack you, you get sent back to the start.
 
+12/30/24
+* With kaboom I was able to change the size of how the game looks
+```js
+kaboom({
+	// without specifying "width" and "height", kaboom will size to the container (document.body by default)
+	width: 400,
+	height: 200,
+	// "stretch" stretches the defined width and height to fullscreen
+	// stretch: true,
+	// "letterbox" makes stretching keeps aspect ratio (leaves black bars on empty spaces), have no effect without "stretch"
+	letterbox: true,
+})
+```
+* This will allow for me to change the width and the height of how my game will look like
+
+
+
 
 <!--
 * Links you used today (websites, videos, etc)
