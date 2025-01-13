@@ -102,7 +102,57 @@ kaboom({
 ```
 * This will allow for me to change the width and the height of how my game will look like
 
+1/11/25
+* With kaboom I was able to start getting a sort of map with my game
+```js
+const LEVELS = [
+	[
+		"!  ^ $$ *",
+		"=========",
+	],
+]
 
+scene("game", ({ levelIdx, score }) => {
+	const level = addLevel(LEVELS[levelIdx || 0], {
+		tileWidth: 64,
+		tileHeight: 64,
+		pos: vec2(100, 200),
+		tiles: {
+			"!": () => [
+				sprite("bean"),
+				area(),
+				body(),
+				anchor("bot"),
+				"player",
+			],
+			"=": () => [
+				sprite("grass"),
+				area(),
+				body({ isStatic: true }),
+				anchor("bot"),
+			],
+			"$": () => [
+				sprite("coin"),
+				area(),
+				anchor("bot"),
+				"coin",
+			],
+			"^": () => [
+				sprite("spike"),
+				area(),
+				anchor("bot"),
+				"danger",
+			],
+			"*": () => [
+				sprite("portal"),
+				area(),
+				anchor("bot"),
+				"portal",
+			],
+		},
+	})
+```
+* This code allows for me to create a map so that I can create my platformer game 
 
 
 <!--
