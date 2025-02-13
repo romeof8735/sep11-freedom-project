@@ -1,6 +1,6 @@
 # Plan
 
-## Tool: 
+## Tool: Kaboom
 ## Product: 
 
 ---
@@ -9,13 +9,18 @@
 
 #### MVP
 
-- [ ] Task (deadline: X)
-  - [ ] Subtask (deadline: X)
+- [x] Create a level (deadline: 2/3/25)
+- [ ] Create linked levels (deadline: 3/1/25
+- [ ] Increase difficultly of each level (deadline: 3/10/25)
+- [ ] Overhaul whole gameplay aspects [gravity, text, speed, loading screen, sprites, etc] (deadline: 4/3/25)
+  - [ ] Add characters that you can interactive with (deadline: 3/19/25)
+  - [ ] Change the background of the levels so they can appear more immersive (deadline: 3/7/25
 
 #### Beyond MVP
 
-- [ ] Task
-  - [ ] Subtask
+- [ ] Add useful abilities that can help complete the levels easier
+- [ ] Adding a timer
+  - [ ] Add animation to sprites
 
 
 <!-- EXAMPLE
