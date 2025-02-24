@@ -61,7 +61,8 @@ onLoading((progress) => {
 
 })
 ```
-This code allows for me to create a black screen, then load a sprite that will represent a loading percentage, and then add text that says "Now Loading". Last but not least I was able to add text so that the player could know what keys to press inorder for you to do things. The text looks like this: ![image alt}(https://github.com/romeof8735/sep11-freedom-project/blob/878ad968645fd567bad907cda864b8bd3de5127e/Screenshot%202024-12-14%2010.33.03%20PM.png)
+This code allows for me to create a black screen, then load a sprite that will represent a loading percentage, and then add text that says "Now Loading". Last but not least I was able to add text so that the player could know what keys to press inorder for you to do things. The text looks like this: ![image alt](https://github.com/romeof8735/sep11-freedom-project/blob/878ad968645fd567bad907cda864b8bd3de5127e/Screenshot%202024-12-14%2010.33.03%20PM.png)
+
 The code that I used for this text was:
 ```js
 loadFont("FlowerSketches", "/examples/fonts/FlowerSketches.ttf")
@@ -100,6 +101,18 @@ const input = add([
 ])
 ```
 This code allows for me to add the type of font that I want to use, where I want to position it, and what I want it to say. After I learn a few more things I will be planing on making a platformer, where I can use these elements that I have learned so far and use them insisde of the platformer game that I was hopefully be creating by the end of the year.
+
+### Engineering Design Process
+I am now slowly starting to shift into the middle part of my engineering design process for this year. As I was tinkering with Kaboom, I am learning these news things that I could hopefully implement on my future Kaboom project. I am planing on using these new things to help me create a platformer game where I can have multiple levels and each one will slowly get more difficult. 
+
+### Skills
+The skills that I have learned so far from my tinkering with Kaboom was Consideration and How to learn.
+
+### Consideration
+I improved my consideration skill while doing these task since I have to take into consideration how other people will see the text color with the certain background I have. I also had to take into consideration on how fast the character moves, some people like the character to move slow while others might like the character to move fast, so I decided to meet in the middle, so that the chracter doesn't move too slow or too fast. 
+
+### How to learn 
+I have improved my skill to learn while doing Kaboom since I have to learn it myself without any assistance, besides the tutorials that are on the internet. I have also improved this skill since some tutorials out there use outdates verisons of Kaboom so I have to learn the newer versions on my own. 
 
 [Previous](entry01.md) | [Next](entry03.md)
 

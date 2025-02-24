@@ -73,6 +73,87 @@ const input = add([
 * This allows me to add text for the player to read to help them out.
 * Now that I have learned the basics of these things the next thing that I will try and do is create a platformer, which is what my main project is all about.
 
+### 12/15/24
+* With kaboom I was able to create a sprtite in the certain place where I want it to be at
+* The code I used was:
+```js
+loadSprite("ghosty", "/sprites/ghosty.png")
+
+const player = add([
+	sprite("ghosty"),
+	pos(120, 80),
+	anchor("center"), 
+])
+```
+* This code allows me to add the sprite where I want it and this is super important for me since I will be making a platformer game, and I am planning on adding mobs that if they attack you, you get sent back to the start.
+
+12/30/24
+* With kaboom I was able to change the size of how the game looks
+```js
+kaboom({
+	// without specifying "width" and "height", kaboom will size to the container (document.body by default)
+	width: 400,
+	height: 200,
+	// "stretch" stretches the defined width and height to fullscreen
+	// stretch: true,
+	// "letterbox" makes stretching keeps aspect ratio (leaves black bars on empty spaces), have no effect without "stretch"
+	letterbox: true,
+})
+```
+* This will allow for me to change the width and the height of how my game will look like
+
+1/11/25
+* With kaboom I was able to start getting a sort of map with my game
+```js
+const LEVELS = [
+	[
+		"!  ^ $$ *",
+		"=========",
+	],
+]
+
+scene("game", ({ levelIdx, score }) => {
+	const level = addLevel(LEVELS[levelIdx || 0], {
+		tileWidth: 64,
+		tileHeight: 64,
+		pos: vec2(100, 200),
+		tiles: {
+			"!": () => [
+				sprite("bean"),
+				area(),
+				body(),
+				anchor("bot"),
+				"player",
+			],
+			"=": () => [
+				sprite("grass"),
+				area(),
+				body({ isStatic: true }),
+				anchor("bot"),
+			],
+			"$": () => [
+				sprite("coin"),
+				area(),
+				anchor("bot"),
+				"coin",
+			],
+			"^": () => [
+				sprite("spike"),
+				area(),
+				anchor("bot"),
+				"danger",
+			],
+			"*": () => [
+				sprite("portal"),
+				area(),
+				anchor("bot"),
+				"portal",
+			],
+		},
+	})
+```
+* This code allows for me to create a map so that I can create my platformer game 
+
 
 <!--
 * Links you used today (websites, videos, etc)

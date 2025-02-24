@@ -1,11 +1,12 @@
 # Plan
 
-## Tool: 
-## Product: 
+## Tool:
+## Product:
 
 ---
 
 ## Timeline
+
 
 #### MVP
 
