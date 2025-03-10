@@ -1,7 +1,8 @@
 # Entry 4
-##### X/X/XX
+##### 3/10/25
 
-Text
+## Connecting maps
+
 
 [Previous](entry03.md) | [Next](entry05.md)
 
