@@ -11,7 +11,7 @@
 #### MVP
 
 - [x] Create a level (deadline: 2/3/25)
-- [ ] Create linked levels (deadline: 3/1/25
+- [x] Create linked levels (deadline: 3/1/25
 - [ ] Increase difficultly of each level (deadline: 3/10/25)
 - [ ] Overhaul whole gameplay aspects [gravity, text, speed, loading screen, sprites, etc] (deadline: 4/3/25)
   - [ ] Add characters that you can interactive with (deadline: 3/19/25)
