@@ -152,7 +152,70 @@ scene("game", ({ levelIdx, score }) => {
 		},
 	})
 ```
-* This code allows for me to create a map so that I can create my platformer game 
+* This code allows for me to create a map so that I can create my platformer game
+
+3/8/25
+*With kaboom I was able to finally link more than 1 map with each other.
+*I decided on testing out the portal and seeing how I can make it so that when the player steps into the portal they get teleported into the other map.
+``` js
+const maps = [
+    [
+        "==========",
+        "=        =",
+        "=   P    =",
+        "=        =",
+        "=   @    =",
+        "==========",
+    ],
+    [
+        "##########",
+        "#        #",
+        "#   P    #",
+        "#        #",
+        "#        #",
+        "##########",
+    ]
+];
+
+const levelConfig = {
+    width: 32,
+    height: 32,
+    "=": () => [sprite("brick"), area(), solid()],
+    "#": () => [sprite("grass"), area(), solid()],
+    "P": () => [sprite("player"), area(), body(), "player"],
+    "@": () => [sprite("portal"), area(), "portal"]
+};
+
+function loadLevel(mapIndex) {
+    layers(["bg", "game"], "game");
+    addLevel(maps[mapIndex], levelConfig);
+
+    const player = get("player")[0];
+
+    onKeyDown("left", () => {
+        player.move(-100, 0);
+    });
+
+    onKeyDown("right", () => {
+        player.move(100, 0);
+    });
+
+    onKeyDown("up", () => {
+        player.move(0, -100);
+    });
+
+    onKeyDown("down", () => {
+        player.move(0, 100);
+    });
+
+    player.onCollide("portal", () => {
+        loadLevel(1); // Load second map when touching portal
+    });
+}
+
+loadLevel(0);
+```
+*This allows for when the player enters the portal they get teleported into the other generated map
 
 
 <!--
