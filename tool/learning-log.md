@@ -82,7 +82,7 @@ loadSprite("ghosty", "/sprites/ghosty.png")
 const player = add([
 	sprite("ghosty"),
 	pos(120, 80),
-	anchor("center"), 
+	anchor("center"),
 ])
 ```
 * This code allows me to add the sprite where I want it and this is super important for me since I will be making a platformer game, and I am planning on adding mobs that if they attack you, you get sent back to the start.
@@ -215,7 +215,11 @@ function loadLevel(mapIndex) {
 
 loadLevel(0);
 ```
-*This allows for when the player enters the portal they get teleported into the other generated map
+
+* This allows for when the player enters the portal they get teleported into the other generated map
+
+3/17/25
+
 
 
 <!--
