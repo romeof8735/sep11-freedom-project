@@ -102,7 +102,7 @@ kaboom({
 ```
 * This will allow for me to change the width and the height of how my game will look like
 
-1/11/25
+### 1/11/25
 * With kaboom I was able to start getting a sort of map with my game
 ```js
 const LEVELS = [
@@ -154,7 +154,7 @@ scene("game", ({ levelIdx, score }) => {
 ```
 * This code allows for me to create a map so that I can create my platformer game
 
-3/8/25
+### 3/8/25
 *With kaboom I was able to finally link more than 1 map with each other.
 *I decided on testing out the portal and seeing how I can make it so that when the player steps into the portal they get teleported into the other map.
 ``` js
@@ -218,7 +218,7 @@ loadLevel(0);
 
 * This allows for when the player enters the portal they get teleported into the other generated map
 
-3/17/25
+### 3/24/25
 
 
 
