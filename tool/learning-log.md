@@ -215,10 +215,96 @@ function loadLevel(mapIndex) {
 
 loadLevel(0);
 ```
-
 * This allows for when the player enters the portal they get teleported into the other generated map
 
-3/17/25
+4/6/25
+* I am starting to expand my maps and make them bigger. I am going to be doing this by editing the size of the level.
+``` js
+const maps = [
+    [
+        "====================",
+        "=                  =",
+        "=    P             =",
+        "=                  =",
+        "=                  =",
+        "=                  =",
+        "=         @        =",
+        "=                  =",
+        "=                  =",
+        "=                  =",
+        "=                  =",
+        "====================",
+    ],
+    [
+        "####################",
+        "#                  #",
+        "#    P             #",
+        "#                  #",
+        "#                  #",
+        "#                  #",
+        "#                  #",
+        "#                  #",
+        "#                  #",
+        "#                  #",
+        "#                  #",
+        "####################",
+    ]
+];
+
+
+const levelConfig = {
+    width: 32,
+    height: 32,
+    "=": () => [sprite("brick"), area(), solid()],
+    "#": () => [sprite("grass"), area(), solid()],
+    "P": () => [sprite("player"), area(), body(), "player"],
+    "@": () => [sprite("portal"), area(), "portal"]
+};
+
+
+function loadLevel(mapIndex) {
+    layers(["bg", "game"], "game");
+    const level = addLevel(maps[mapIndex], levelConfig);
+
+
+    const player = get("player")[0];
+
+
+    onKeyDown("left", () => {
+        player.move(-100, 0);
+    });
+
+
+    onKeyDown("right", () => {
+        player.move(100, 0);
+    });
+
+
+    onKeyDown("up", () => {
+        player.move(0, -100);
+    });
+
+
+    onKeyDown("down", () => {
+        player.move(0, 100);
+    });
+
+
+    player.onCollide("portal", () => {
+        loadLevel(1);
+    });
+
+
+    camera.follow(player);
+}
+
+
+loadLevel(0);
+```
+
+
+
+
 
 
 
