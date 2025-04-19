@@ -12,14 +12,14 @@
 
 - [x] Create a level (deadline: 2/3/25)
 - [x] Create linked levels (deadline: 3/1/25
-- [ ] Increase difficultly of each level (deadline: 3/10/25)
-- [ ] Overhaul whole gameplay aspects [gravity, text, speed, loading screen, sprites, etc] (deadline: 4/3/25)
-  - [ ] Add characters that you can interactive with (deadline: 3/19/25)
-  - [ ] Change the background of the levels so they can appear more immersive (deadline: 3/7/25
+- [x] Increase difficultly of each level (deadline: 3/10/25)
+- [x] Overhaul whole gameplay aspects [gravity, text, speed, loading screen, sprites, etc] (deadline: 4/3/25)
+  - [ ] Add characters that you can interactive with (deadline: 3/19/25) (CANCELED AS OF 4/17/25)
+  - [x] Change the background of the levels so they can appear more immersive (deadline: 3/7/25
 
 #### Beyond MVP
 
-- [ ] Add useful abilities that can help complete the levels easier
+- [x] Add useful abilities that can help complete the levels easier
 - [ ] Adding a timer
   - [ ] Add animation to sprites
 
