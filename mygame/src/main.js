@@ -1,5 +1,3 @@
-<script type="module">
-
 import kaboom from "kaboom"
 kaboom({
 	background: [0],
@@ -353,4 +351,3 @@ scene("win", () => {
 })
 
 go("game")
-</script>
