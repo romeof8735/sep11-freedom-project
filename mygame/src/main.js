@@ -1,4 +1,5 @@
 import kaboom from "kaboom"
+
 kaboom({
 	background: [0],
 })
@@ -22,7 +23,7 @@ function big() {
 	let destScale = 1
 	return {
 		id: "big",
-		require: [ "scale" ],
+		require: ["scale"],
 		update() {
 			if (isBig) {
 				timer -= dt()
@@ -51,14 +52,12 @@ function big() {
 let timer = 0
 let timerRun = false
 
-
-
-	onUpdate(() => {
-		if (timerRun) {
-			timer += dt()
-			timerLabel.text = "Time: " + timer.toFixed(1)
-		}
-	})
+onUpdate(() => {
+	if (timerRun) {
+		timer += dt()
+		timerLabel.text = "Time: " + timer.toFixed(1)
+	}
+})
 
 const JUMP_FORCE = 1360
 const JUMPBOOSTED = 2000
@@ -93,40 +92,39 @@ const LEVELS = [
 		"          = $",
 		"          = $",
 		"          = *",
-		"            =",
-
+		"           =",
 	],
 	[
-		"                             ",
-		"                             ",
-		"                             ",
-		"                             ",
-		"                     $       ",
-		"         $$$$        =       ",
-		"  @      ====      = =       ",
-		"                     =       ",
-		"                     =       ",
-		"       ^^        !!!!= $ ^^ *",
+		"                              ",
+		"                              ",
+		"                              ",
+		"                              ",
+		"                     $        ",
+		"         $$$$         =       ",
+		"  @      ====        = =      ",
+		"                      =       ",
+		"                      =       ",
+		"     ^^         !!!!= $ ^^ *",
 		"=============================",
 	],
 	[
-	   "                                                                                                           =",
-	   "                                                                                                           =",
-	   "                                                                                                           =",
-	   "                                                                                                           =",
-	   "                                                                                                           =",
-	   "                                                                                                           =",
-	   "                                                                                                           =",
-	   "                                                                         $     $     @          $       $  =",
-	   "                                                                         =     =     =       ======     =  =",
-       "                                                                         =     =     =          =       =  =",
-	   "                                                                         =     =     =          =       =  =",
-	   "                                                                         =     =     =          =       =  =",
-	   "                                                                         =     =     =          =       =  =",
-	   "                                                                         =     =     =          =       =  =",
-	   "                                                                         =     =     =          =       =  =",
-	   "   ^^   !   !   !    ^^^  &  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ % =     =     =^^^^^^^^^^=!!!!!!!=$*=",
-	   "=============================================================================================================",
+		"                                                                                                    =",
+		"                                                                                                    =",
+		"                                                                                                    =",
+		"                                                                                                    =",
+		"                                                                                                    =",
+		"                                                                                                    =",
+		"                                                                                                    =",
+		"                                            $     $     @          $       $                        =",
+		"                                            =     =     =       ======     =                        =",
+		"                                            =     =     =          =       =                        =",
+		"                                            =     =     =          =       =                        =",
+		"                                            =     =     =          =       =                        =",
+		"                                            =     =     =          =       =                        =",
+		"                                            =     =     =          =       =                        =",
+		"                                            =     =     =          =       =                        =",
+		"   ^^   !   !   !    ^^^  &  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ % =     =     =^^^^^^^^^^=!!!!!!!=$*=",
+		"=============================================================================================================",
 	],
 ]
 
@@ -255,34 +253,25 @@ scene("game", ({ levelId, coins } = { levelId: 0, coins: 0 }) => {
 	})
 
 	player.onCollide("enemy", () => {
-			go("lose")
-		})
-
-	let hasApple = false
+		go("lose")
+	})
 
 	player.onCollide("apple", (a) => {
 		destroy(a)
 		player.biggify(3)
-		hasApple = false
 	})
-
-	let hasApple2 = false
 
 	player.onCollide("apple2", (a2) => {
 		destroy(a2)
-		currentJumpForce = JUMPBOOSTED;
-
+		currentJumpForce = JUMPBOOSTED
 		wait(1.5, () => {
 			currentJumpForce = JUMP_FORCE
 		})
 	})
 
-	let hasApple3 = false
-
 	player.onCollide("apple3", (a3) => {
 		destroy(a3)
 		currentMoveSpeed = BOOSTEDSPEED
-
 		wait(2.8, () => {
 			currentMoveSpeed = BASESPEED
 		})
@@ -303,16 +292,14 @@ scene("game", ({ levelId, coins } = { levelId: 0, coins: 0 }) => {
 	function jump() {
 		if (player.isGrounded()) {
 			player.jump(currentJumpForce)
-
 			camScale(0.6)
-
 			wait(0.7, () => {
 				camScale(1)
 			})
 		}
 	}
 
-	onKeyPress("space", jump),
+	onKeyPress("space", jump)
 
 	onKeyDown("left", () => {
 		player.move(-currentMoveSpeed, 0)
@@ -329,7 +316,6 @@ scene("game", ({ levelId, coins } = { levelId: 0, coins: 0 }) => {
 	onKeyRelease("down", () => {
 		player.weight = 1
 	})
-
 })
 
 scene("lose", () => {
