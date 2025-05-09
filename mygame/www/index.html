@@ -5,10 +5,20 @@
 </head>
 <body>
 	<script src="main.js"></script>
-	<script src="https://unpkg.com/kaboom@3000.0.1/dist/kaboom.js"></script>
+	<script type="module">
 
-<script>
-    kaboom();
+// import kaboom.js
+import kaboom from "https://unpkg.com/kaboom@3000.0.1/dist/kaboom.mjs";
+
+// initialize kaboom context
+kaboom();
+
+// add a piece of text at position (120, 80)
+add([
+    text("hello"),
+    pos(120, 80),
+]);
+
 </script>
 </body>
 </html>
