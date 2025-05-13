@@ -1,16 +1,16 @@
 # Presentation Plan
 
 ## Hook
-* 
+* Have you ever wanted to eat a apple in a game that made you gain special abilites? Now you can
 
 ## Product
-* 
+* I created a 2D platformer game using Kaboom.js where the player can collect different types of apples that grant special powers.
 
 ## Process
-* 
+* I started by designing different levels using arrays of strings where each character represents different game elements like sprites etc.
 
 ## Conclusion
-* 
+* This project taught me how to build a fun and interactive game using Kaboom.js. I also learned many other things like how to plan my time carfully so that I could work on different parts of the game.
 
 <!-- EXAMPLE
 
