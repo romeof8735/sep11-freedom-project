@@ -36,19 +36,11 @@ function big() {
 		update() {
 			if (isBig) {
 				timer -= dt()
-				if (timer <= 0) {
-					this.smallify()
-				}
 			}
 			this.scale = this.scale.lerp(vec2(destScale), dt() * 6)
 		},
 		isBig() {
 			return isBig
-		},
-		smallify() {
-			destScale = 1
-			timer = 0
-			isBig = false
 		},
 		biggify(time) {
 			destScale = 2
