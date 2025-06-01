@@ -14,9 +14,13 @@ For my project, I chose to independently study **[Kaboom.js](https://kaboomjs.co
 
 ## Implications
 ##### PROS
-* 
+* Project shows how JavaScript can be used to create fun and interactive games
+* Allows for your creativity to bloom with Kaboom.js
+* Improved skills on solving problems
 ##### CONS
-* 
+* Not meant to make big popular games
+* Bugs take time to figure out
+* Doesnt have big support such as other engines like Unity or Phaser
 
 
 ## Blog
