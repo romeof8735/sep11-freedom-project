@@ -4,7 +4,11 @@
 ## Reflection
 This is my final blog for the Kaboom game that I have been working on. I am currently as of now done with my game, and I feel proud of how it has turned out. Over the last few months that we have been given this freedom project assignment with picking our own tools such as what I chose Kaboom, I have learned a lot in general on how video games work behind the scenes and the amount of time and coding it takes to not only make the game but also fix a ton of bugs that come naturally along the way. 
 
-One of my best and favorite parts of my project was creating the whole game such as the levels, enemies, and espically the powerup abilites. ![Screen recording 2025-04-27 1.27.54 PM.gif](https://github.com/romeof8735/sep11-freedom-project/blob/4f2ad76e7233657d203b1f75b621e5e56441b200/img%20and%20gif/Screen%20recording%202025-04-27%201.27.54%20PM.gif)
+
+One of my best and favorite parts of my project was creating the whole game such as the levels, enemies, and espically the power up 
+abilites.
+
+![Screen recording 2025-04-27 1.27.54 PM.gif](https://github.com/romeof8735/sep11-freedom-project/blob/4f2ad76e7233657d203b1f75b621e5e56441b200/img%20and%20gif/Screen%20recording%202025-04-27%201.27.54%20PM.gif)
 
 Before I even picked Kaboom I knew that I wanted to make some sort of game to where each level as you go on gets harder and harder. To counter this there would be something in the game that would allow the player to get special abilities to help them advance to the next levels. I am very proud that I was able to do this and didn't change or switch up on my main idea that I wanted to do with my freedom project. 
 
